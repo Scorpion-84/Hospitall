@@ -1,8 +1,18 @@
-from model.entity.user_entity import Sick
-import sys
-sys.path.append('/path/to/your/module')
-import model.entity.user_entity
+from model.entity.user_entity import Employee, Visit, Payment
 
-user_1 = Sick(56756459878, 'Mahdi', 'Salimi', 'Scorpion', 'mm.salimi84', 'ghalbi', 'Ali Afshari', 'sick')
+user_1 = Employee(56, 'Mahdi', 'Salimi', 'Scorpion', 'mm.salimi84', 'Employee')
 
 print(user_1)
+
+
+user_1 = Visit(56, '2025/05/23', 'Ali Afshari', 'Mahdi Salimi','Visited')
+
+print(user_1)
+
+
+user_1 = Payment(56, 'Ali Afshari', '2025/05/23', '1850000', 'Paid')
+
+print(user_1)
+
+
+
